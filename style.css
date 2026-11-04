@@ -1,0 +1,73 @@
+
+:root {
+  --bg: #f3f4f6;
+  --card: #ffffff;
+  --text: #171717;
+  --border: #dddddd;
+}
+
+body.dark {
+  --bg: #0d1117;
+  --card: #161b22;
+  --text: #f0f6fc;
+  --border: #30363d;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+header, form {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+input {
+  flex: 1;
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #238636;
+  color: white;
+  cursor: pointer;
+}
+
+.profile-card, .repo-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+  margin: 12px 0;
+}
+
+.profile-card img {
+  width: 100px;
+  border-radius: 50%;
+}
+
+.repo-card a {
+  color: #58a6ff;
+}
+
+#message {
+  color: #e05252;
+}
+  
